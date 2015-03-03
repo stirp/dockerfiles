@@ -22,12 +22,12 @@ ENV TOMCAT_JVM_ROUTE tomcat80
 ENV DEPLOY_DIR ${CATALINA_HOME}/webapps
 ENV LIBS_DIR ${CATALINA_HOME}/libs
 ENV PATH $PATH:$CATALINA_HOME/bin
-ENV JAVA_OPTS -Xms256m -Xmx400m -XX:MaxNewSize=256m -server
 
 RUN rm -rf ${CATALINA_HOME}/webapps/* ${CATALINA_HOME}/RELEASE-NOTES ${CATALINA_HOME}/RUNNING.txt ${CATALINA_HOME}/bin/*.bat  ${CATALINA_HOME}/bin/*.tar.gz 
 
 ADD server.xml ${CATALINA_HOME}/conf/server.xml
 ADD logging.properties ${CATALINA_HOME}/conf/logging.properties
+ADD catalina.sh ${CATALINA_HOME}/bin/catalina.sh
 
 RUN chmod +x /usr/local/tomcat/bin/*.sh
 
