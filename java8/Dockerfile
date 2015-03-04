@@ -26,4 +26,4 @@ VOLUME ["/data"]
 WORKDIR /data
 
 # Define default command.
-CMD ["bash"
+CMD ["bash"]
