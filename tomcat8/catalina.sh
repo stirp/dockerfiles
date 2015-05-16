@@ -107,7 +107,7 @@ esac
 
 
 # this is for docker-enter
-JAVA_OPTS="-Xms256m -Xmx400m -XX:MaxNewSize=256m -server"
+JAVA_OPTS="-Xms256m -Xmx800m -XX:MaxNewSize=256m -server"
 
 # resolve links - $0 may be a softlink
 PRG="$0"
