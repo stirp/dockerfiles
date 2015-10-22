@@ -17,7 +17,7 @@ RUN rm -f /tmp/jdk.rpm
 
 ENV JAVA_HOME /usr/java/jdk1.8.0_31
 ENV JRE_HOME /usr/java/jdk1.8.0_31/jre
-ENV PATH $PATH:$JAVA_HOME
+ENV PATH $PATH:$JAVA_HOME/bin
 
 # Define mountable directories.
 VOLUME ["/data"]
