@@ -1,9 +1,9 @@
 #
-# Tomcat Dockerfile
+# Node.js Dockerfile
 #
 
 # Pull base image.
-FROM dl.dockerpool.com:5000/node
+FROM node:5.2.0-wheezy
 MAINTAINER renpeng.shang<renpeng.shang@woqu.com>
 
-#CMD ["/usr/local/tomcat/bin/catalina.sh","run"]
+EXPOSE 8888
